@@ -1,12 +1,14 @@
 package com.example.android.edvora
 
 import UpcomingFragment
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.android.edvora.Adapter.ViewPagerAdapter
 import com.example.android.edvora.Fragments.NearestFragment
 import com.example.android.edvora.Fragments.PastFragment
 import kotlinx.android.synthetic.main.tabayout.*
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +16,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         setUpTabs()
+
     }
+
+
+
 
     private fun setUpTabs(){
         val adapter = ViewPagerAdapter(supportFragmentManager)

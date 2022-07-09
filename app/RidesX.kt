@@ -1,0 +1,1 @@
+class RidesX : ArrayList<RidesItemX>()
